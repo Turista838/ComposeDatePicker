@@ -91,7 +91,7 @@ fun DatePicker(
         // TODO add sliding effect when next or previous arrow is pressed
         CalendarHeader(
             title = "${uiState.currentVisibleMonth.name} ${uiState.selectedYear}",
-            onMonthYearClick = { viewModel.toggleIsMonthYearViewVisible() },
+            onMonthYearClick = { /*viewModel.toggleIsMonthYearViewVisible()*/ },
             onNextClick = { viewModel.moveToNextMonth() },
             onPreviousClick = { viewModel.moveToPreviousMonth() },
             isPreviousNextVisible = !uiState.isMonthYearViewVisible,
